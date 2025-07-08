@@ -1,9 +1,9 @@
 {
   "name": "ngcn",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Next-Gen Angular Component CLI with themes, standalone support, and config files.",
   "bin": {
-    "ngcn": "./bin/index.js"
+    "ngcn": "bin/index.js"
   },
   "type": "module",
   "keywords": [
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UmairBaig8/ngcn.git"
+    "url": "git+https://github.com/UmairBaig8/ngcn.git"
   },
   "dependencies": {
     "commander": "^11.0.0",
