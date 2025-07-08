@@ -1,6 +1,6 @@
 {
   "name": "ngcn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Next-Gen Angular Component CLI with themes, standalone support, and config files.",
   "bin": {
     "ngcn": "bin/index.js"
