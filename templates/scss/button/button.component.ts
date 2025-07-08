@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   {{StandaloneFlag}}
-  selector: 'app-{{ComponentName}}',
-  templateUrl: './{{ComponentName}}.component.html',
-  styleUrls: ['./{{ComponentName}}.component.scss']
+  selector: 'app-{{name}}',
+  templateUrl: './{{name}}.component.html',
+  styleUrls: ['./{{name}}.component.scss']
 })
 export class {{ComponentName}}Component {}

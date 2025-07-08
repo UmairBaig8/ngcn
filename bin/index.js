@@ -37,6 +37,13 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+function toPascalCase(str) {
+  return str
+    .split(/[-_\s]/g)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join('');
+}
+
 
 async function addComponent(componentName, options) {
   const userConfig = loadUserConfig();
@@ -80,17 +87,16 @@ async function addComponent(componentName, options) {
   for (const file of fs.readdirSync(componentPath)) {
     const srcFile = path.join(componentPath, file);
     const destFile = path.join(targetPath, file);
-  
+
     const content = fs.readFileSync(srcFile, 'utf-8');
     const replaced = replaceTemplateVariables(content, {
-      ComponentName: capitalize(componentName),
+      name: componentName.toLowerCase(),
+      ComponentName: toPascalCase(componentName),
       StandaloneFlag: standaloneFlag
     });
-  
+
     fs.writeFileSync(destFile, replaced);
   }
-  
-  
 
   console.log(`✅ Added '${componentName}' to ${targetBase}/${componentName}`);
 }
