@@ -1,8 +1,11 @@
+[![npm version](https://img.shields.io/npm/v/ngcn.svg)](https://www.npmjs.com/package/ngcn)
+
+
 # ngcn
 
 > ⚡️ Next-Gen Component CLI for Angular – Generate themed, standalone-ready Angular components instantly.
-
 ---
+
 
 ## ✨ What is it?
 
